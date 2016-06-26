@@ -10,52 +10,48 @@ var outer = function(){
 // Invoke outer saving the return value into another variable called 'inner'.
 
   //Code Here
+var inner = outer();
 
 //Once you do that, invoke inner.
 
   //Code Here
-
-
+inner();
 
 //////////////////PROBLEM 2////////////////////
 
-
 var callFriend = function(){
   var friend = 'Jake';
-  function callF(number){
+  function callF(number) {
     return 'Calling ' + friend + ' at ' + number;
   }
   return callF;
 };
 
-
 //Above you're given a callFriend function that returns another function.
 //Do what you need to do in order to call your function and get 'Calling Jake at 435-215-9248' in your console.
 
   //Code Here
+var newCall = callFriend();
 
-
+console.log(newCall("435-215-9248"));
 
 //////////////////PROBLEM 3////////////////////
-
-
 
 /*
   Write a function called makeCounter that makes the following code work properly.
 */  //Code Here
+function makeCounter() {
   
-  
+}
+
 //Uncomment this once you make your function
-//   var count = makeCounter();
-//   count(); // 1
-//   count(); // 2
-//   count(); // 3
-//   count(); // 4
-
-
+  var count = makeCounter();
+  count(); // 1
+  count(); // 2
+  count(); // 3
+  count(); // 4
 
 //////////////////PROBLEM 4////////////////////
-
 
 // Inside the function called counterFactory
 // return two functions that implement up/down counter.
@@ -71,14 +67,9 @@ function counterFactory(value) {
 
 }
 
-
 counter = counterFactory(10);
 
-
-
-
 //////////////////PROBLEM 5////////////////////
-
 
 // Inside the motivation function create another function called message that will return welcomeText + firstname + lastname
 
@@ -88,14 +79,11 @@ counter = counterFactory(10);
 
     // code message function here
 
-
     //Uncommment this to return the value of your invoked message function
     // return message()
   }
 
   motivation('Billy', 'Bob'); // 'Your doing awesome keep it up Billy Bob
-
-
 
 //////////////////PROBLEM 6////////////////////
 // Inside the return create a publicMethod property that is a function that invokes privateMethod. After you create the privateMethod
@@ -123,8 +111,6 @@ counter = counterFactory(10);
 //Uncomment this after you create your public method
 //   module.publicMethod();
 
-
-
 //////////////////PROBLEM 7////////////////////
 // Here we have a for loop that will iterate as long as i is less than or equal to 5. What we need to do is console.log(i)
 // So that it logs ( 1 then 2 then 3, etc). Run this code in your console to see what the output is.
@@ -138,12 +124,6 @@ counter = counterFactory(10);
 
 
   // To make this code work you will need to create a new scope for every iteration.
-
-
-
-
-
-
 
 //////////////////PROBLEM 8////////////////////
 
@@ -159,5 +139,3 @@ counter = counterFactory(10);
 
   *Hint: Don't let this fool you. Break down what's really happening here.
 */
-
-
